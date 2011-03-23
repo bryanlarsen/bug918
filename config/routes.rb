@@ -3,6 +3,9 @@ Yo::Application.routes.draw do
 
   match 'search' => 'front#search', :as => 'site_search'
 
+  match 'search_companies' => 'companies#search_companies', :as => :search_companies
+
+
   # The priority is based upon order of creation:
   # first created -> highest priority.
 

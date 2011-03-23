@@ -1,0 +1,25 @@
+<page title="Search Companies">
+
+  <content:>    
+
+    <!-- To ajaxify this form, uncomment the following line. -->
+    <form web-method="search_companies" method="GET" update="searchresults" message="Searching..." spinner-next-to="searchbtn" refocus-form>
+<!--    <form action="search_companies" method="GET">        -->
+                                                 
+      Name: <input id="name" type="text" name="name"></input>
+      <submit id="searchbtn" label="Search"/>  
+
+    </form>
+           
+    <!-- Need a dummy context here: Hobo Ticket 918-13 (BL) --> 
+     <div part="searchresults">
+                                             
+      <table-plus with="&@foo" fields="name" without-search-form/>
+      
+      </div>
+    
+
+  </content:>
+  
+</page>
+                      
